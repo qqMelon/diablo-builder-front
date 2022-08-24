@@ -1,0 +1,15 @@
+:root {
+    --brand-color: #B03E3E;
+    --dark-color: #29292C;
+    --mid-color: #D4D4D8;
+    --light-color: #F8FAFC;
+
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #29292C;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}

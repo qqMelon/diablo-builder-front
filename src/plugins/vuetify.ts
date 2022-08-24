@@ -12,8 +12,8 @@ const myCustomTheme: { variables: undefined; dark: boolean; colors: { secondary:
     variables: undefined,
     dark: true,
     colors: {
-        background: "#2c2c30",
-        primary: "#d32727",
+        background: "#29292C",
+        primary: "#B03E3E",
         secondary: "#D4D4D8",
         white: "#F8FAFC",
         error: '#B00020',
@@ -23,14 +23,11 @@ const myCustomTheme: { variables: undefined; dark: boolean; colors: { secondary:
     }
 }
 
-export default createVuetify(
-    components,
-    {
-        theme: {
-            defaultTheme: 'myCustomTheme',
-            themes: {
-                myCustomTheme,
-            }
+export default createVuetify({
+    theme: {
+        defaultTheme: 'myCustomTheme',
+        themes: {
+            myCustomTheme,
         }
     }
-)
+})
