@@ -1,19 +1,21 @@
 <script setup lang="ts">
+import AppButton from '@/components/AppButton.vue'
 </script>
 
 <template>
   <v-app-bar
-      color="grey-lighten-5"
+      color="white"
       density="compact"
+      height="86"
   >
-    <template v-slot:prepend>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    </template>
+<!--    <template v-slot:prepend>-->
+<!--      <v-app-bar-nav-icon></v-app-bar-nav-icon>-->
+<!--    </template>-->
 
     <v-app-bar-title>Diablo Builder</v-app-bar-title>
 
     <template v-slot:append>
-      <v-btn icon="mdi-dots-vertical"></v-btn>
+      <AppButton title="Connexion"/>
     </template>
   </v-app-bar>
 </template>

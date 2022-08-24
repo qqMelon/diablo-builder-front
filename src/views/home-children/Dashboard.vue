@@ -2,7 +2,7 @@
 import { Set } from "../../interfaces/set";
 import SetCard from '@/components/SetCard.vue'
 
-// Mocking dataset for example
+// Mocking data
 const sets: Set[] = [
   { id: '1', title: 'Permafrost wizzard', gameVersion: '2.5.7', author: 'qqMelon', classGame: 'Wizzard', difficulty: 'low', imageUrl: 'https://eu.diablo3.blizzard.com/static/images/hero/wizard/bg.jpg' },
   { id: '2', title: 'SunWukong Monk', gameVersion: '2.5.7', author: 'qqMelon', classGame: 'Monk', difficulty: 'medium', imageUrl: 'https://eu.diablo3.blizzard.com/static/images/hero/monk/bg.jpg' },
@@ -15,6 +15,7 @@ const sets: Set[] = [
     <v-row>
       <v-col cols="8">
         <v-row class="pl-3 mb-3">
+          <v-divider></v-divider>
           <h5 class="text-h4">Lastest builds</h5>
         </v-row>
         <v-row>

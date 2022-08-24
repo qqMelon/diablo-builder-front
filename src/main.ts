@@ -7,6 +7,7 @@ import './styles/app.css'
 
 loadFonts().then(() => {})
 
+
 createApp(App)
   .use(vuetify)
   .use(router)

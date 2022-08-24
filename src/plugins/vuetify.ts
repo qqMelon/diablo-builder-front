@@ -3,13 +3,12 @@ import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 
 // Vuetify
-import {createVuetify, ThemeDefinition} from 'vuetify'
-import * as components from 'vuetify/components'
+import { createVuetify, ThemeDefinition } from 'vuetify'
+// import * as components from 'vuetify/components'
 // import * as directives from 'vuetify/directives'\
 
 // Custom theme
-const myCustomTheme: { variables: undefined; dark: boolean; colors: { secondary: string; white: string; background: string; success: string; warning: string; error: string; primary: string; info: string } } = {
-    variables: undefined,
+const myCustomTheme: ThemeDefinition = {
     dark: true,
     colors: {
         background: "#29292C",
