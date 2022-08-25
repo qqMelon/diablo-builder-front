@@ -15,7 +15,6 @@ const sets: Set[] = [
     <v-row>
       <v-col cols="8">
         <v-row class="pl-3 mb-3">
-          <v-divider></v-divider>
           <h5 class="text-h4">Lastest builds</h5>
         </v-row>
         <v-row>
