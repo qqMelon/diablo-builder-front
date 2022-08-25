@@ -3,17 +3,16 @@ import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 
 // Vuetify
-import {createVuetify, ThemeDefinition} from 'vuetify'
-import * as components from 'vuetify/components'
+import { createVuetify, ThemeDefinition } from 'vuetify'
+// import * as components from 'vuetify/components'
 // import * as directives from 'vuetify/directives'\
 
 // Custom theme
-const myCustomTheme: { variables: undefined; dark: boolean; colors: { secondary: string; white: string; background: string; success: string; warning: string; error: string; primary: string; info: string } } = {
-    variables: undefined,
+const myCustomTheme: ThemeDefinition = {
     dark: true,
     colors: {
-        background: "#2c2c30",
-        primary: "#d32727",
+        background: "#29292C",
+        primary: "#B03E3E",
         secondary: "#D4D4D8",
         white: "#F8FAFC",
         error: '#B00020',
@@ -23,14 +22,11 @@ const myCustomTheme: { variables: undefined; dark: boolean; colors: { secondary:
     }
 }
 
-export default createVuetify(
-    components,
-    {
-        theme: {
-            defaultTheme: 'myCustomTheme',
-            themes: {
-                myCustomTheme,
-            }
+export default createVuetify({
+    theme: {
+        defaultTheme: 'myCustomTheme',
+        themes: {
+            myCustomTheme,
         }
     }
-)
+})

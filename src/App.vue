@@ -1,11 +1,19 @@
-<script setup lang="ts">
-import {useTheme} from "vuetify";
+<script lang="ts">
+import { useTheme } from 'vuetify'
 
-useTheme().global.name.value = 'dark'
+export default {
+  setup: function () {
+    const theme = useTheme()
+
+    return {
+      theme
+    }
+  }
+}
 </script>
 
 <template>
-  <v-app theme="dark">
+  <v-app theme="myCustomTheme">
     <v-main>
       <router-view />
     </v-main>
