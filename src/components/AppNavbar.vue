@@ -8,12 +8,7 @@ import AppButton from '@/components/AppButton.vue'
       density="compact"
       height="86"
   >
-<!--    <template v-slot:prepend>-->
-<!--      <v-app-bar-nav-icon></v-app-bar-nav-icon>-->
-<!--    </template>-->
-
     <v-app-bar-title>Diablo Builder</v-app-bar-title>
-
     <template v-slot:append>
       <AppButton title="Connexion"/>
     </template>
