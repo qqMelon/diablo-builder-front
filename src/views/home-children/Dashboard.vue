@@ -6,7 +6,7 @@ import { Update } from "../../interfaces/update";
 import SetCard from '@/components/SetCard.vue'
 import AppList from '@/components/AppList.vue'
 import AppUpdate from '@/components/AppUpdate.vue'
-import SetFilter from '@/components/SetFilter.vue'
+// import SetFilter from '@/components/SetFilter.vue'
 
 // Mocking data
 const sets: Set[] = [
@@ -34,11 +34,10 @@ const updates: Update[] = [
     </v-row>
     <v-row class="px-3 mb-5 flex-column">
       <h5 class="text-h4 mb-1">Latest builds</h5>
-      <p>Specific research:</p>
     </v-row>
-    <v-row class="px-3">
-      <SetFilter />
-    </v-row>
+<!--    <v-row class="px-3">-->
+<!--      <SetFilter />-->
+<!--    </v-row>-->
     <v-row>
       <v-col cols="8">
         <v-row>
