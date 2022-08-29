@@ -1,3 +1,7 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  Leaderboard
+  <v-container fluid>
+  </v-container>
 </template>

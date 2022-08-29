@@ -32,12 +32,14 @@ const updates: Update[] = [
     <v-row class="pl-3 mb-lg-10 mt-2">
       <h2 class="text-h2">Build and share your own set</h2>
     </v-row>
-    <v-row class="px-3 mb-5 flex-column">
-      <h5 class="text-h4 mb-1">Latest builds</h5>
+    <v-row class="px-3 ">
+      <v-col cols="8">
+        <h5 class="text-h4 mb-1">Latest builds</h5>
+      </v-col>
+      <v-col cols="4">
+        <h5 class="text-h4">Latest updates</h5>
+      </v-col>
     </v-row>
-<!--    <v-row class="px-3">-->
-<!--      <SetFilter />-->
-<!--    </v-row>-->
     <v-row>
       <v-col cols="8">
         <v-row>
@@ -47,9 +49,6 @@ const updates: Update[] = [
         </v-row>
       </v-col>
       <v-col cols="4">
-        <v-row class="pl-3 mb-3">
-          <h5 class="text-h4">Latest updates</h5>
-        </v-row>
         <v-row>
           <v-col cols="12">
             <AppList lines="2">
