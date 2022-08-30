@@ -6,13 +6,17 @@ import router from './router'
 import './styles/app.css'
 
 // Store from pinia
-import { store } from './stores/index';
+import { store } from './stores';
 
 loadFonts().then(() => {})
 
-const app = createApp(App)
-  .use(vuetify)
-  .use(store)
-  .use(router)
+function InitApp () {
+    const app = createApp(App)
+        .use(vuetify)
+        .use(store)
+        .use(router)
 
-app.mount('#root')
+    app.mount('#root')
+}
+
+InitApp()
