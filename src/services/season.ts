@@ -1,8 +1,12 @@
-import axios from 'axios'
+import http from './index'
 
 class Season {
-    async getActiveSeason(): Promise<any> {
-        return await axios.get('/data/d3/season/')
+    async getActiveSeason(token: string): Promise<any> {
+        return await http.get('/data/d3/season/', {
+            headers: {
+                'Authorization': 'Bearer ' + token
+            }
+        })
     }
 }
 
