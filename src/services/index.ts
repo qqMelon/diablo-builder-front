@@ -1,33 +1,8 @@
 import axios from 'axios'
-import { useClientStore } from "../stores/client";
-
-const clientStore = useClientStore()
 
 const http = axios.create({
-    baseURL: clientStore.baseUrl
+    baseURL: import.meta.env.VITE_BLIZZ_BASE_URL,
+    "Content-type": "application/json",
 })
-
-// On request
-http.interceptors.request.use(
-    (config) => {
-        if (clientStore.accessToken) {
-            config.headers = {
-                ...config.headers,
-                Authorization: `Bearer ${clientStore.accessToken}`
-            }
-        }
-        return config
-    },
-    (error) => {
-        return Promise.reject(error)
-    }
-)
-
-// On response
-http.interceptors.response.use(
-    (res) => {
-        return res
-    }
-)
 
 export default http
