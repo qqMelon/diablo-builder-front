@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import { Set } from "@/interfaces/set";
-import { Update } from "../../interfaces/update";
+import { Set } from '@/interfaces/set'
+import { Update } from '@/interfaces/update'
+import { useSeasonStore } from '@/stores/season'
+
+const seasonStore = useSeasonStore()
+const activeSeason = seasonStore.currentSeason
 
 // Import components
 import SetCard from '@/components/SetCard.vue'
@@ -29,8 +33,9 @@ const updates: Update[] = [
 
 <template>
   <v-container fluid>
-    <v-row class="pl-3 mb-lg-10 mt-2">
+    <v-row class="pl-3 mb-lg-10 mt-2 flex-column">
       <h2 class="text-h2">Build and share your own set</h2>
+      <p class="ml-1">Active season: <strong>{{ activeSeason }}</strong></p>
     </v-row>
     <v-row class="px-3 ">
       <v-col cols="8">
