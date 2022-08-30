@@ -3,7 +3,7 @@ import AppNavbar from '@/components/AppNavbar.vue'
 import { onMounted } from 'vue'
 import { useClientStore } from '../stores/client'
 import { useSeasonStore } from '../stores/season'
-import Season from '../services/season'
+import Season from '@/services/season'
 
 const seasonStore = useSeasonStore()
 const clientStore = useClientStore()
