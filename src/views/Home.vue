@@ -1,22 +1,21 @@
 <script setup lang="ts">
 import AppNavbar from '@/components/AppNavbar.vue'
-// import http from "@/services";
-import { onMounted } from "vue";
-// import { useSeasonStore } from '@/stores/season'
+import { onMounted } from 'vue'
+import { useClientStore } from '../stores/client'
+import { useSeasonStore } from '../stores/season'
+import Season from '../services/season'
 
-// const seasonStore = useSeasonStore()
+const seasonStore = useSeasonStore()
+const clientStore = useClientStore()
 
-// Get and store the active season
-// const getActiveSeason = function () {
-//   http.get('/data/d3/season/')
-//       .then((response: any) => {
-//         seasonStore.currentSeason = response.data.current_season
-//       })
-//       .catch((error: any) => { console.warn(error)})
-// }
+const getActiveSeason = function () {
+  Season.getActiveSeason(clientStore.credentials.accessToken)
+      .then(response => seasonStore.currentSeason = response.data.current_season)
+      .catch(error => console.error(error))
+}
 
 onMounted(() => {
-  // getActiveSeason()
+  getActiveSeason()
 })
 </script>
 
