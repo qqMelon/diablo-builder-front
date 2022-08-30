@@ -21,6 +21,11 @@ const routes: RouteRecordRaw[] = [
                 path: 'home-leaderboard',
                 name: 'Home Leaderboard',
                 component: () => import('./views/home-children/Leaderboard.vue')
+            },
+            {
+                path: 'home-builds',
+                name: 'Home Builds',
+                component: () => import('./views/home-children/Builds.vue')
             }
         ]
     }

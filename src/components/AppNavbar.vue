@@ -12,6 +12,7 @@ import AppButton from '@/components/AppButton.vue'
     <template v-slot:append>
       <div class="app-navbar-link-container flex-row align-center">
         <router-link to="/home-dashboard" class="text-decoration-none text-uppercase mr-4 font-weight-regular">Home</router-link>
+        <router-link to="/home-builds" class="text-decoration-none text-uppercase mr-4 font-weight-regular">Builds</router-link>
         <router-link to="/home-leaderboard" class="text-decoration-none text-uppercase mr-4 font-weight-regular">LeaderBoard</router-link>
       </div>
       <AppButton title="Connexion"/>
